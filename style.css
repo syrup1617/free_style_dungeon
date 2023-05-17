@@ -1,0 +1,696 @@
+/* 初期化 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* ヘッダー */
+.title {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 242, 242);
+    color:rgb(48, 38, 38);
+    letter-spacing: 4px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* 背景画像 */
+.dj_photo {
+    width: 100%;
+    height: 650px;
+}
+
+/* DJ卓 */
+.dj {
+    border: solid 4px black;
+    width: 500px;
+    height: 350px;
+	background-color: rgb(190, 190, 190);
+    left: 150px;
+    top: 250px;
+    position: absolute;
+    /* inset: 0;
+    margin: auto; */
+}
+
+#donuts {
+    width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: black;
+    position: relative;
+    left: 50px;
+    top: 30px;
+    position: absolute;
+}
+
+.donuts_active {
+    animation: animate1 128s linear;
+}
+
+@keyframes animate1 {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(2160deg);
+    }
+}
+
+.reflection {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 72.5px;
+    top: 10px;
+}
+
+.donuts_mini {
+    width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: rgb(190, 190, 190);
+    position: relative;
+    left: 60px;
+    top: 60px;
+}
+
+#donuts2 {
+    width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: black;
+    position: absolute;
+    left: 300px;
+    top: 30px;
+}
+
+.donuts2_active {
+    animation: animate2 10s linear;
+}
+
+@keyframes animate2 {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+.reflection2 {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 72.5px;
+    top: 10px;
+}
+
+
+.donuts_mini2 {
+    width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: rgb(190, 190, 190);
+    position: relative;
+    left: 60px;
+    top: 60px;
+}
+
+.button_left {
+    border: solid 2px black;
+    background-color: rgb(45, 36, 36);
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    position: relative;
+    left: 50px;
+    top: 220px;
+}
+
+.button_right {
+    border: solid 2px black;
+    background-color: rgb(45, 36, 36);
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    position: relative;
+    left: 304px;
+    top: 116px;
+}
+
+.button1 {
+    background-color: white;
+}
+
+#button1 {
+    border: solid 2px black;
+    width: 40px;
+    height: 42.5px;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button1_active {
+    animation: color1 10s;
+}
+
+@keyframes color1 {
+    0%, 20%, 40%, 60%, 80%, 100%{
+        background-color: white;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        background-color: red;
+    }
+    
+    0%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+    100%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+}
+
+.button2 {
+    background-color: white;
+}
+
+#button2 {
+    border: solid 2px black;
+    width: 40px;
+    height: 42.5px;
+    position: absolute;
+    left: 49px;
+    top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.button2_active {
+    animation: color2 10s;
+}
+
+@keyframes color2 {
+    0%, 20%, 40%, 60%, 80%, 100%{
+        background-color: white;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        background-color: rgb(255, 195, 83);
+    }
+
+    0%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+    100%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+}
+
+.button3 {
+    background-color: white;
+
+}
+
+#button3 {
+    border: solid 2px black;
+    width: 40px;
+    height: 42.5px;
+    position: absolute;
+    left: 94px;
+    top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.button3_active {
+    animation: color3 10s;
+}
+
+@keyframes color3 {
+    0%, 20%, 40%, 60%, 80%, 100%{
+        background-color: white;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        background-color: rgb(255, 255, 0);
+    }
+
+    0%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+    100%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+}
+
+.button4 {
+    background-color: white;
+
+}
+
+#button4 {
+    border: solid 2px black;
+    width: 40px;
+    height: 42.5px;
+    position: absolute;
+    left: 3px;
+    top: 52.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.button4_active {
+    animation: color4 10s;
+}
+
+@keyframes color4 {
+    0%, 20%, 40%, 60%, 80%, 100%{
+        background-color: white;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        background-color: lightgreen;
+    }
+
+    0%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+    100%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+}
+
+.button5 {
+    background-color: white;
+
+}
+
+#button5 {
+    border: solid 2px black;
+    width: 40px;
+    height: 42.5px;
+    position: absolute;
+    left: 49px;
+    top: 52.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.button5_active {
+    animation: color5 10s;
+}
+
+@keyframes color5 {
+    0%, 20%, 40%, 60%, 80%, 100%{
+        background-color: white;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        background-color: rgb(255, 0, 255);
+    }
+
+    0%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+    100%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+}
+
+.button6 {
+    background-color: white;
+}
+
+#button6 {
+    border: solid 2px black;
+    width: 40px;
+    height: 42.5px;
+    position: absolute;
+    left: 94px;
+    top: 52.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.button6_active {
+    animation: color6 2s;
+}
+
+@keyframes color6 {
+    0%, 100%{
+        background-color: white;
+    }
+    50% {
+        background-color: lightblue;
+    }
+
+    0%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+    100%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+}
+
+.button7 {
+    background-color: white;
+}
+
+#button7 {
+    border: solid 2px black;
+    width: 40px;
+    height: 42.5px;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.button7_active {
+    animation: color7 1.5s;
+}
+
+@keyframes color7 {
+    0%, 50%, 100%{
+        background-color: white;
+    }
+    25%, 75% {
+        background-color: rgb(77, 77, 255);
+    }
+
+    0%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+    100%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+}
+
+.button8 {
+    background-color: white;
+}
+
+#button8 {
+    border: solid 2px black;
+    width: 40px;
+    height: 42.5px;
+    position: absolute;
+    left: 48px;
+    top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.button8_active {
+    animation: color8 10s;
+}
+
+@keyframes color8 {
+    0%, 20%, 40%, 60%, 80%, 100%{
+        background-color: white;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        background-color: rgb(0, 184, 0);
+    }
+
+    0%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+    100%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+}
+
+.button9 {
+    background-color: white;
+}
+
+#button9 {
+    border: solid 2px black;
+    width: 40px;
+    height: 42.5px;
+    position: absolute;
+    left: 94px;
+    top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.button9_active {
+    animation: color9 10s;
+}
+
+@keyframes color9 {
+    0%, 20%, 40%, 60%, 80%, 100%{
+        background-color: white;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        background-color: pink;
+    }
+
+    0%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+    100%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+}
+
+
+.button10 {
+    background-color: white;
+}
+
+#button10 {
+    border: solid 2px black;
+    width: 40px;
+    height: 42.5px;
+    position: absolute;
+    left: 3px;
+    top: 52.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.button10_active {
+    animation: color10 10s;
+}
+
+@keyframes color10 {
+    0%, 20%, 40%, 60%, 80%, 100%{
+        background-color: white;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        background-color: rgb(54, 198, 255);
+    }
+
+    0%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+    100%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+}
+
+
+.button11 {
+    background-color: white;
+}
+
+#button11 {
+    border: solid 2px black;
+    width: 40px;
+    height: 42.5px;
+    position: absolute;
+    left: 48px;
+    top: 52.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.button11_active {
+    animation: color11 10s;
+}
+
+@keyframes color11 {
+    0%, 20%, 40%, 60%, 80%, 100%{
+        background-color: white;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        background-color: rgb(255, 73, 73);
+    }
+
+    0%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+    100%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+}
+
+
+.button12 {
+    background-color: white;
+}
+
+#button12 {
+    border: solid 2px black;
+    width: 40px;
+    height: 42.5px;
+    position: absolute;
+    left: 94px;
+    top: 52.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer
+}
+
+.button12_active {
+    animation: color12 10s;
+}
+
+@keyframes color12 {
+    0%, 20%, 40%, 60%, 80%, 100%{
+        background-color: white;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        background-color: rgb(145, 27, 255);
+    }
+
+    0%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+    100%{
+        box-shadow: 0px 0px 3px 5px white;
+    }
+}
+
+/* オンオフスイッチ */
+#switch_on {
+    width: 35px;
+    height: 20px;
+    border: 2px solid black;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 232.5px;
+    top: 184px;
+    cursor: pointer;
+}
+
+.switch_on {
+    background-color: white;
+}
+
+.switch_on_active {
+    background-color: red;
+    color: white;
+}
+
+#switch_off {
+    width: 35px;
+    height: 20px;
+    border: 2px solid black;
+    border-top: 1px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    left: 232.5px;
+    cursor: pointer;
+}
+
+.switch_off {
+    background-color: rgb(52, 52, 255);
+    color: white;
+}
+
+.switch_off_active {
+    background-color: white;
+    color: black;
+}
+
+/* 説明 */
+.explain {
+    width: 500px;
+    height: 600px;
+    background-color: rgb(253, 251, 238);
+    position: absolute;
+    right: 150px;
+    top: 100px;
+}
+
+.explain ul li {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+
+span {
+    color: rgb(177, 0, 177);
+    font-weight: bold;
+    font-size: 20px;
+}
+
