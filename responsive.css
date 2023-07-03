@@ -1,0 +1,50 @@
+@media screen and (max-width: 600px) {
+    
+    .title {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .dj_photo {
+        object-fit: cover;
+        width: 100%;
+        height: auto;
+    }
+
+    
+    .wrap {
+        position: relative;
+        flex-direction: column;
+    }
+
+
+    .explain {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    li,span {
+        font-size: 0.9rem;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    h1 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        margin: 5px;
+        font-size: 0.6rem;
+    }
+
+    .dj {
+        max-width: 95%;
+    }
+
+    
+}
