@@ -44,14 +44,8 @@ body {
     height: 350px;
 	background-color: rgb(190, 190, 190);
 
-    /* left: 150px;
-    top: 250px;
-    position: absolute; */
-
     /* inset: 0;
     margin: auto; */
-
-    /* display: none;     */
 }
 
 .dj_donut {
@@ -105,7 +99,6 @@ body {
 	height: 150px;
 	border-radius: 50%;
 	background: black;
-   
 }
 
 .donut2_active {
@@ -646,12 +639,6 @@ body {
     width: 500px;
     height: 600px;
     background-color: rgb(253, 251, 238);
-
-    /* position: absolute;
-    right: 150px;
-    top: 100px; */
-
-    /* display: none; */
 }
 
 .explain ul li {
